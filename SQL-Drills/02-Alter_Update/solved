@@ -1,0 +1,24 @@
+# Alter vs. Update
+
+
+### Part 1
+
+* Explain the difference between `alter` and `update` in SQL statements.
+
+The ALTER statement changes the structure of a table. The UPDATE statement updates data within the table.
+### Part 2
+
+* You are given the following table:
+
+  ![Images/alter_update01.png](Images/alter_update01.png)
+
+* Change the name of the column from `department_id` to `dept_id`.
+
+* Add a column named `annual_salary` to the table.
+
+
+ALTER TABLE 
+RENAME COLUMN department_id TO dept_id;
+
+ALTER TABLE
+ADD COLUMN annual_salary INTEGER NOT NULL;
